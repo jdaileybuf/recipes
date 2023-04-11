@@ -44,7 +44,7 @@
 				<string>%PATCH_TEMPLATE%</string>
 			</dict>
 			<key>Processor</key>
-			<string>JSSImporter</string>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>
