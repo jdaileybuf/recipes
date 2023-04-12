@@ -5,9 +5,9 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Install Spotify and uploads the package to your JSS.</string>
+	<string>Downloads the latest version of Spotify and uploads the package to your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.jdaileybuf.jss-upload.InstallSpotify</string>
+	<string>com.github.jdaileybuf.jss-upload.Spotify</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -28,7 +28,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jdaileybuf.pkg.InstallSpotify</string>
+	<string>com.github.jdaileybuf.pkg.Spotify</string>
 	<key>Process</key>
 	<array>
 		<dict>
