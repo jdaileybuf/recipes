@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of Spotify and uploads the package to your JSS.</string>
+	<key>Identifier</key>
+	<string>com.github.jdaileybuf.jss-upload.Spotify</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
+		<key>NAME</key>
+		<string>Spotify</string>
+		<key>PATCH_ENABLED</key>
+		<string>true</string>
+		<key>PATCH_NAME</key>
+		<string>%NAME%</string>
+		<key>PATCH_SOFTWARE_TITLE</key>
+		<string>%NAME%</string>
+		<key>PATCH_TEMPLATE</key>
+		<string>PatchTemplate-automatic.xml</string>
+		<key>POLICY_NAME</key>
+		<string>%NAME% Update</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.jdaileybuf.pkg.Spotify</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_icon_policy_name</key>
+				<string>%POLICY_NAME%</string>
+				<key>patch_name</key>
+				<string>%PATCH_NAME%</string>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARE_TITLE%</string>
+				<key>patch_template</key>
+				<string>%PATCH_TEMPLATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
