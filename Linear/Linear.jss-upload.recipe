@@ -13,7 +13,17 @@
 		<key>CATEGORY</key>
 		<string>Productivity</string>
 		<key>NAME</key>
-		<string>Linear</string>
+		<string>Firefox</string>
+		<key>PATCH_ENABLED</key>
+		<string>true</string>
+		<key>PATCH_NAME</key>
+		<string>%NAME%</string>
+		<key>PATCH_SOFTWARE_TITLE</key>
+		<string>%NAME%</string>
+		<key>PATCH_TEMPLATE</key>
+		<string>PatchTemplate-selfservice.xml</string>
+		<key>POLICY_NAME</key>
+		<string>Install Latest %NAME%</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -24,10 +34,14 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>category</key>
-				<string>%CATEGORY%</string>
-				<key>prod_name</key>
-				<string>%NAME%</string>
+				<key>patch_icon_policy_name</key>
+				<string>%POLICY_NAME%</string>
+				<key>patch_name</key>
+				<string>%PATCH_NAME%</string>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARE_TITLE%</string>
+				<key>patch_template</key>
+				<string>%PATCH_TEMPLATE%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
