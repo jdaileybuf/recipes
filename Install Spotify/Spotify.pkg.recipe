@@ -7,23 +7,23 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Install Spotify and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.jdaileybuf.pkg.InstallSpotify</string>
+	<string>com.github.jdaileybuf.pkg.Spotify</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Install Spotify</string>
+		<string>Spotify</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jdaileybuf.download.InstallSpotify</string>
+	<string>com.github.jdaileybuf.download.Spotify</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>app_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Install Spotify.app</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Spotify.app</string>
 			</dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>

@@ -7,18 +7,18 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Install Spotify and uploads the package to your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.jdaileybuf.jss-upload.InstallSpotify</string>
+	<string>com.github.jdaileybuf.jss-upload.Spotify</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
 		<string>Productivity</string>
 		<key>NAME</key>
-		<string>Install Spotify</string>
+		<string>Spotify</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jdaileybuf.pkg.InstallSpotify</string>
+	<string>com.github.jdaileybuf.pkg.Spotify</string>
 	<key>Process</key>
 	<array>
 		<dict>

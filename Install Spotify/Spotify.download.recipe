@@ -7,11 +7,11 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Install Spotify.</string>
 	<key>Identifier</key>
-	<string>com.github.jdaileybuf.download.InstallSpotify</string>
+	<string>com.github.jdaileybuf.download.Spotify</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Install Spotify</string>
+		<string>Spotify</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
