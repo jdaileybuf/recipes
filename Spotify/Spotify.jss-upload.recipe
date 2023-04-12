@@ -34,8 +34,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>category_name</key>
 				<string>%CATEGORY%</string>
 			</dict>
