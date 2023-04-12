@@ -23,7 +23,7 @@
 		<key>PATCH_TEMPLATE</key>
 		<string>PatchTemplate-automatic.xml</string>
 		<key>POLICY_NAME</key>
-		<string>Install Latest %NAME%</string>
+		<string>%NAME% Update</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
