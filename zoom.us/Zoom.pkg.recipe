@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Zoom and builds a package.</string>
 	<key>Identifier</key>
-	<string>com.github.homebysix.pkg.Zoom</string>
+	<string>com.github.jdaileybuf.pkg.zoom.us</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>1.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.hansen-m.download.zoomus</string>
+	<string>com.github.jdaileybuf.download.zoom.us</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -50,7 +50,7 @@
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications</string>
 				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/expanded/zoomus.pkg/Payload</string>
+				<string>%RECIPE_CACHE_DIR%/expanded/zoom.us.pkg/Payload</string>
 			</dict>
 			<key>Processor</key>
 			<string>PkgPayloadUnpacker</string>
