@@ -10,12 +10,10 @@
 	<string>com.github.jdaileybuf.jss-upload.Chrome</string>
 	<key>Input</key>
 	<dict>
-		<key>APP_FILENAME</key>
-		<string>Google Chrome</string>
 		<key>CATEGORY</key>
 		<string>Productivity</string>
 		<key>NAME</key>
-		<string>Chrome</string>
+		<string>Google Chrome</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -30,9 +28,32 @@
 				<string>%CATEGORY%</string>
 				<key>prod_name</key>
 				<string>%NAME%</string>
+				<key>PATCH_ENABLED</key>
+				<string>true</string>
+				<key>PATCH_NAME</key>
+				<string>%NAME%</string>
+				<key>PATCH_SOFTWARE_TITLE</key>
+				<string>%NAME%</string>
+				<key>PATCH_TEMPLATE</key>
+				<string>PatchTemplate-automatic.xml</string>
+				<key>POLICY_NAME</key>
+				<string>%NAME% Update</string>
 			</dict>
 			<key>Processor</key>
-			<string>JSSImporter</string>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_name</key>
+				<string>%PATCH_NAME%</string>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARE_TITLE%</string>
+				<key>patch_template</key>
+				<string>%PATCH_TEMPLATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>
