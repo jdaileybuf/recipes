@@ -27,13 +27,13 @@
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>prod_name</key>
-				<string>%NAME%</string>
+				<string>Zoom Client for Meetings</string>
 				<key>PATCH_ENABLED</key>
 				<string>false</string>
 				<key>PATCH_NAME</key>
 				<string>%NAME%</string>
 				<key>PATCH_SOFTWARE_TITLE</key>
-				<string>%NAME%</string>
+				<string>Zoom Client for Meetings</string>
 				<key>PATCH_TEMPLATE</key>
 				<string>PatchTemplate-automatic.xml</string>
 				<key>POLICY_NAME</key>
