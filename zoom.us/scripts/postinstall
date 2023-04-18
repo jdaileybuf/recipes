@@ -22,9 +22,9 @@ app_path="/Applications/zoom.us.app"
 
 ver="$(/usr/bin/sw_vers -productVersion)"
 majorver="$(/usr/bin/sw_vers -productVersion | /usr/bin/cut -d "." -f 1)"
-minorver="$(/usr/bin/sw_vers -productVersion | /usr/bin/cut -d "." -f 2)"
+minorver="$(/usr/bin/sw_vers -productVersion | /usr/bin/cut -d " " -f 2)"
 
-echo "get version: $ver, $majorver, $minorver" >> "$LOG_PATH"
+echo "get version: $ver, $majorver, ($minorver)" >> "$LOG_PATH"
 
 login_user="$(/usr/bin/stat -f '%Su' /dev/console)"
 echo "user: $login_user" >> "$LOG_PATH"
