@@ -10,28 +10,6 @@
 	<string>com.github.jdaileybuf.jss-upload.Linear</string>
 	<key>Input</key>
 	<dict>
-		<key>CATEGORY</key>
-		<string>Productivity</string>
-		<key>NAME</key>
-		<string>Linear</string>
-		<key>PATCH_ENABLED</key>
-		<string>true</string>
-		<key>PATCH_NAME</key>
-		<string>%NAME%</string>
-		<key>PATCH_SOFTWARE_TITLE</key>
-		<string>%NAME%</string>
-		<key>PATCH_TEMPLATE</key>
-		<string>PatchTemplate-automatic.xml</string>
-		<key>POLICY_NAME</key>
-		<string>%NAME% Update</string>
-	</dict>
-	<key>MinimumVersion</key>
-	<string>1.0.0</string>
-	<key>ParentRecipe</key>
-	<string>com.github.jdaileybuf.pkg.Linear</string>
-	<key>Process</key>
-	<array>
-		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>category</key>
@@ -55,6 +33,8 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>patch_icon_policy_name</key>
+				<string>%POLICY_NAME%</string>
 				<key>patch_name</key>
 				<string>%PATCH_NAME%</string>
 				<key>patch_softwaretitle</key>
