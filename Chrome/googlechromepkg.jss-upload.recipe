@@ -35,7 +35,7 @@
 				<key>PATCH_SOFTWARE_TITLE</key>
 				<string>%NAME%</string>
 				<key>PATCH_TEMPLATE</key>
-				<string>PatchTemplate-selfservice.xml</string>
+				<string>PatchTemplate-automatic.xml</string>
 				<key>POLICY_NAME</key>
 				<string>%NAME% Update</string>
 			</dict>
