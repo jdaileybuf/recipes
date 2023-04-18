@@ -21,7 +21,7 @@ LOG_PATH="/Library/Logs/zoomusinstall.log"
 app_path="/Applications/zoom.us.app"
 
 ver="$(/usr/bin/sw_vers -productVersion)"
-majorver="$(/usr/bin/sw_vers -productVersion | /usr/bin/cut -d "." -f 1)"
+majorver="$(/usr/bin/sw_vers -productVersion | /usr/bin/cut -d " " -f 1)"
 minorver="$(/usr/bin/sw_vers -productVersion | /usr/bin/cut -d " " -f 2)"
 
 echo "get version: $ver, $majorver, ($minorver)" >> "$LOG_PATH"
