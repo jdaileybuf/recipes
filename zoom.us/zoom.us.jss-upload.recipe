@@ -38,7 +38,7 @@
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>prod_name</key>
-				<string>%NAME%</string>
+				<string>Zoom-5.14.5 (17687).pkg</string>
 				<key>PATCH_ENABLED</key>
 				<string>false</string>
 				<key>PATCH_NAME</key>
@@ -59,7 +59,7 @@
 				<key>patch_name</key>
 				<string>%PATCH_NAME%</string>
 				<key>patch_softwaretitle</key>
-				<string>Zoom-5.14.5 (17687)</string>
+				<string>%PATCH_SOFTWARE_TITLE%</string>
 				<key>patch_template</key>
 				<string>%PATCH_TEMPLATE%</string>
 			</dict>
