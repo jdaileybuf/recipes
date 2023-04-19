@@ -24,6 +24,17 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>source_pkg</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%jamfversion%.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>PkgCopier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>prod_name</key>
@@ -48,7 +59,7 @@
 				<key>patch_name</key>
 				<string>%PATCH_NAME%</string>
 				<key>patch_softwaretitle</key>
-				<string>%PATCH_SOFTWARE_TITLE%</string>
+				<string>Zoom-5.14.5 (17687)</string>
 				<key>patch_template</key>
 				<string>%PATCH_TEMPLATE%</string>
 			</dict>
