@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jdaileybuf.download.zoom.us</string>
+	<string>com.github.jdaileybuf.pkg.zoom.us</string>
 	<key>Process</key>
 	<array>
 		<array>
