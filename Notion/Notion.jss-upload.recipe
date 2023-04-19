@@ -29,7 +29,7 @@
 				<key>prod_name</key>
 				<string>%NAME%</string>
 				<key>PATCH_ENABLED</key>
-				<string>true</string>
+				<string>false</string>
 				<key>PATCH_NAME</key>
 				<string>%NAME%</string>
 				<key>PATCH_SOFTWARE_TITLE</key>
