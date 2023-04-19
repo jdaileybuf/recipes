@@ -98,7 +98,7 @@
 					<key>scripts</key>
 					<string>scripts</string>
 					<key>version</key>
-					<string>%version%</string>
+					<string>%jamfversion%</string>
 				</dict>
 			</dict>
 			<key>Processor</key>
