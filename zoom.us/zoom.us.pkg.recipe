@@ -94,7 +94,7 @@
 					<key>options</key>
 					<string>purge_ds_store</string>
 					<key>pkgname</key>
-					<string>%NAME%-%jamfversion%</string>
+					<string>%NAME%-5.14.2 (17213)</string>
 					<key>scripts</key>
 					<string>scripts</string>
 					<key>version</key>
