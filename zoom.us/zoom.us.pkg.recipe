@@ -112,6 +112,8 @@
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-jamfversion%.pkg</string>
 			</dict>
+			<key>Processor</key>
+			<string>PkgCopier</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
