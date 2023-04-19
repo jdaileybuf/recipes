@@ -18,9 +18,10 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jdaileybuf.pkg.zoom.us</string>
+	<string>com.github.jdaileybuf.download.zoom.us</string>
 	<key>Process</key>
 	<array>
+		<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -28,9 +29,32 @@
 				<string>%CATEGORY%</string>
 				<key>prod_name</key>
 				<string>%NAME%</string>
+				<key>PATCH_ENABLED</key>
+				<string>false</string>
+				<key>PATCH_NAME</key>
+				<string>%NAME%</string>
+				<key>PATCH_SOFTWARE_TITLE</key>
+				<string>%NAME%</string>
+				<key>PATCH_TEMPLATE</key>
+				<string>PatchTemplate-automatic.xml</string>
+				<key>POLICY_NAME</key>
+				<string>%NAME% Update</string>
 			</dict>
 			<key>Processor</key>
-			<string>JSSImporter</string>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_name</key>
+				<string>%PATCH_NAME%</string>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARE_TITLE%</string>
+				<key>patch_template</key>
+				<string>%PATCH_TEMPLATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>
