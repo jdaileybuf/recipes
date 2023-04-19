@@ -76,19 +76,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>re_pattern</key>
-				<string>Version *</string>
-				<key>result_output_var_name</key>
-				<string>match</string>
-				<key>url</key>
-				<string>https://zoom.us/download</string>
-			</dict>
-			<key>Processor</key>
-			<string>URLTextSearcher</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>pkg_request</key>
 				<dict>
 					<key>chown</key>
@@ -107,7 +94,7 @@
 					<key>options</key>
 					<string>purge_ds_store</string>
 					<key>pkgname</key>
-					<string>%NAME%-%match%</string>
+					<string>%NAME%-%jamfversion%</string>
 					<key>scripts</key>
 					<string>scripts</string>
 					<key>version</key>
