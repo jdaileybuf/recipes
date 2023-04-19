@@ -21,7 +21,6 @@
 	<string>com.github.jdaileybuf.pkg.zoom.us</string>
 	<key>Process</key>
 	<array>
-		<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
