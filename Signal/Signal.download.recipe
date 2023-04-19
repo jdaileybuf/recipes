@@ -21,11 +21,11 @@
 			<key>Arguments</key>
 			<dict>
 				<key>re_pattern</key>
-				<string>r'https://updates.signal.org/desktop/signal-desktop-mac-universal-\d+\.\d+\.\d+\.dmg</string>
+				<string>https://updates.signal.org/desktop/signal-desktop-mac-universal-\d+\.\d+\.\d+\.dmg</string>
 				<key>result_output_var_name</key>
 				<string>match</string>
 				<key>url</key>
-				<string>https://signal.org/download/</string>
+				<string>https://signal.org/download</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
