@@ -65,6 +65,8 @@
 			<dict>
 				<key>pkg_name</key>
 				<string>%NAME%-%jamfversion%.pkg</string>
+				<key>version</key>
+				<string>%jamfversion%</string>
 				<key>patch_name</key>
 				<string>%PATCH_NAME%</string>
 				<key>patch_softwaretitle</key>
