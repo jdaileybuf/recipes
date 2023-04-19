@@ -24,21 +24,10 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>source_pkg</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%jamfversion%.pkg</string>
-			</dict>
-			<key>Processor</key>
-			<string>PkgCopier</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>prod_name</key>
-				<string>Zoom-5.14.5 (17687).pkg</string>
+				<string>%NAME%</string>
 				<key>PATCH_ENABLED</key>
 				<string>false</string>
 				<key>PATCH_NAME</key>
