@@ -94,15 +94,24 @@
 					<key>options</key>
 					<string>purge_ds_store</string>
 					<key>pkgname</key>
-					<string>%NAME%-%jamfversion%</string>
+					<string>%NAME%-%version%</string>
 					<key>scripts</key>
 					<string>scripts</string>
 					<key>version</key>
-					<string>%jamfversion%</string>
+					<string>%version%</string>
 				</dict>
 			</dict>
 			<key>Processor</key>
 			<string>PkgCreator</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>source_pkg</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-jamfversion%.pkg</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>Arguments</key>
