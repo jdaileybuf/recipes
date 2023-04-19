@@ -33,7 +33,7 @@
 				<key>PATCH_NAME</key>
 				<string>%NAME%</string>
 				<key>PATCH_SOFTWARE_TITLE</key>
-				<string>%NAME%</string>
+				<string>Zoom Client For Meetings</string>
 				<key>PATCH_TEMPLATE</key>
 				<string>PatchTemplate-automatic.xml</string>
 				<key>POLICY_NAME</key>
