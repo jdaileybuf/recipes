@@ -21,11 +21,11 @@
 			<key>Arguments</key>
 			<dict>
 				<key>re_pattern</key>
-				<string>https://updates.signal.org/desktop/signal-desktop-mac-universal-\d+\.\d+\.\d+\.dmg</string>
+				<string>signal-desktop-mac-universal-.*.dmg</string>
 				<key>result_output_var_name</key>
 				<string>match</string>
 				<key>url</key>
-				<string>https://signal.org/download</string>
+				<string>https://updates.signal.org/desktop/latest-mac.yml</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
@@ -36,7 +36,7 @@
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 				<key>url</key>
-				<string>%match%</string>
+				<string>https://updates.signal.org/desktop/%match%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
