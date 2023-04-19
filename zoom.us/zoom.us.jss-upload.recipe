@@ -24,6 +24,23 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>info_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/zoom.us.app/Contents/Info.plist</string>
+				<key>plist_keys</key>
+				<dict>
+					<key>CFBundleVersion</key>
+					<string>version</string>
+					<key>CFBundleShortVersionString</key>
+					<string>jamfversion</string>
+					<key>LSMinimumSystemVersion</key>
+					<string>min_os_version</string>
+				</dict>
+			</dict>
+			<key>Processor</key>
+			<string>PlistReader</string>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>prod_name</key>
@@ -45,6 +62,8 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>pkg_name</key>
+				<string>%NAME%-%jamfversion%.pkg</string>
 				<key>patch_name</key>
 				<string>%PATCH_NAME%</string>
 				<key>patch_softwaretitle</key>
@@ -54,6 +73,17 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>path_list</key>
+				<array>
+					<string>%RECIPE_CACHE_DIR%/expanded</string>
+				</array>
+			</dict>
+			<key>Processor</key>
+			<string>PathDeleter</string>
 		</dict>
 	</array>
 </dict>
