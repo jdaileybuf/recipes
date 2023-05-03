@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+loggedInUser=$( scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }' )
+
+chown -R $loggedInUser: /Applications/Linear.app/ && chmod -R 775 /Applications/Linear.app/
