@@ -28,6 +28,8 @@
 				<dict>
 					<key>scripts</key>
 					<string>scripts<string>
+				</dict>
+			</dict>
 		</dict>
 	</array>
 </dict>
