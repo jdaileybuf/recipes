@@ -27,7 +27,7 @@
 				<key>pkg_request</key>
 				<dict>
 					<key>scripts</key>
-					<string>scripts<string>
+					<string>scripts</string>
 				</dict>
 			</dict>
 		</dict>
