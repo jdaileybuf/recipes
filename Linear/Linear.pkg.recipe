@@ -22,6 +22,12 @@
 		<dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_request</key>
+				<dict>
+					<key>scripts</key>
+					<string>scripts<string>
 		</dict>
 	</array>
 </dict>
